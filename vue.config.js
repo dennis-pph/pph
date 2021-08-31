@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: '/',//publicPath取代了baseUrl
+    publicPath: './',//publicPath取代了baseUrl
     outputDir: 'docs',
     lintOnSave: true,
     runtimeCompiler: true, //关键点在这  原来的 Compiler 换成了 runtimeCompiler
@@ -10,7 +10,7 @@ module.exports = {
     // 配置 webpack-dev-server 行为。
     devServer: {
         open: true,
-        host: '0.0.0.0',
+        host: 'localhost',
         port: 8080,
         https: false,
         hotOnly: false,
