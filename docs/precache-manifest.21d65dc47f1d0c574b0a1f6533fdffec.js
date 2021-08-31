@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pph/img/logo.82b9c7a5.png"
   },
   {
-    "revision": "f253a89ddddc28a2e52ddc7b23e22768",
+    "revision": "c74736b37df719c0a6b93015b92a6320",
     "url": "/pph/index.html"
   },
   {
@@ -178,6 +178,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "68b329da9893e34099c7d8ad5cb9c940",
     "url": "/pph/live2d/assets/mtn/redme.txt"
+  },
+  {
+    "revision": "9290d557eef937ad7ddda93076e13e7c",
+    "url": "/pph/live2d/lib/L2Dwidget.0.min.js"
+  },
+  {
+    "revision": "ffdfa20559a2cfade7d10810c8689a2c",
+    "url": "/pph/live2d/lib/L2Dwidget.min.js"
+  },
+  {
+    "revision": "63adb1a925db49e48b0cc167136be293",
+    "url": "/pph/live2d/lib/manifest.json"
   },
   {
     "revision": "5c24011e06a677ddaaf771615c490ae5",
