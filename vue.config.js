@@ -1,6 +1,11 @@
+const path = require('path')
+
 module.exports = {
-    publicPath: './',//publicPath取代了baseUrl
+    publicPath: '/pph/',//publicPath取代了baseUrl
+    // assetsRoot: path.resolve(__dirname, '../docs'),
     outputDir: 'docs',
+    assetsDir: 'static',
+    indexPath: path.resolve(__dirname, '../docs/index.html'),
     lintOnSave: true,
     runtimeCompiler: true, //关键点在这  原来的 Compiler 换成了 runtimeCompiler
     // 调整内部的 webpack 配置。
