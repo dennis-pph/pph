@@ -4,8 +4,8 @@ module.exports = {
     publicPath: '/pph/',//publicPath取代了baseUrl
     // assetsRoot: path.resolve(__dirname, '../docs'),
     outputDir: 'docs',
-    assetsDir: 'static',
-    indexPath: path.resolve(__dirname, '../docs/index.html'),
+    assetsDir: '',
+    // indexPath: path.resolve(__dirname, '../index.html'),
     lintOnSave: true,
     runtimeCompiler: true, //关键点在这  原来的 Compiler 换成了 runtimeCompiler
     // 调整内部的 webpack 配置。
