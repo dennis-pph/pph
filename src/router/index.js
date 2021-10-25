@@ -44,7 +44,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
-  base: '/pph/',
+  base: process.env.BASE_URL,
   routes
 })
 
