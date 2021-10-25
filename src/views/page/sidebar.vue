@@ -1,9 +1,11 @@
 <template>
   <div id="sidebar">
-    <router-link to="/">首页</router-link>
+    <router-link to="/home">首页</router-link>
     <ul>
       <li>
-        <router-link to="/about">guanyu</router-link>
+        <router-link to="/about/index">guanyu</router-link>
+        <router-link to="/about/test1">guanyu1</router-link>
+        <router-link to="/about/test2">guanyu2</router-link>
       </li>
     </ul>
   </div>
