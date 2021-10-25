@@ -39,7 +39,8 @@ const routes = [
         component: () => import('../views/demo1/test2.vue'),
       },
     ]
-  }
+  },
+  { path: '*', component: () => import('/src/views/page/index.vue') }
 ]
 
 const router = new VueRouter({
