@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{f820:function(t,e,n){"use strict";n.r(e);var a=function(){var t=this,e=t.$createElement;t._self._c;return t._m(0)},s=[function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"about"},[n("h1",[t._v("This an about page")]),n("dl",[n("dt",[t._v("计算机")]),n("dd",[t._v("用来计算的仪器 ... ...")]),n("dt",[t._v("显示器")]),n("dd",[t._v("以视觉方式显示信息的装置 ... ...")])])])}],u=n("2877"),l={},c=Object(u["a"])(l,a,s,!1,null,null,null);e["default"]=c.exports}}]);
+//# sourceMappingURL=about.24ffa8e0.js.map

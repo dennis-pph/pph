@@ -1,12 +1,35 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <top></top>
+    <article>
+      <sidebar></sidebar>
+      <index></index>
+    </article>
+
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <router-view/> -->
   </div>
 </template>
+
+<script>
+import top from "./views/page/top";
+import sidebar from "./views/page/sidebar";
+import index from "./views/page";
+export default {
+  name: "app",
+  components: {
+    top,
+    sidebar,
+    index,
+  },
+  data() {
+    return {};
+  },
+};
+</script>
 
 <style lang="less">
 #app {
@@ -17,16 +40,25 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+#app{
+  height: 100%;
+  >article{
+    display: flex;
   }
 }
+
+
+
+// #nav {
+//   padding: 30px;
+
+//   a {
+//     font-weight: bold;
+//     color: #2c3e50;
+
+//     &.router-link-exact-active {
+//       color: #42b983;
+//     }
+//   }
+// }
 </style>
