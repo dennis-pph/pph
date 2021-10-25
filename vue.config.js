@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    publicPath: '/pph/',//publicPath取代了baseUrl
+    publicPath: 'pph',//publicPath取代了baseUrl
     // assetsRoot: path.resolve(__dirname, '../docs'),
     outputDir: 'docs',
     assetsDir: '',
