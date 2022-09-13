@@ -1,6 +1,6 @@
 <template>
   <div id="top">
-    top
+    top111
     <span class="loginButton" @click="showLoginWindow">登录</span>
     <transition name="loginWindow">
       <div class="loginWindow" v-if="loginWindowFlag">
@@ -52,7 +52,7 @@ export default {
 <style lang="less" scoped>
 #top {
   height: 100px;
-  background: #444;
+  background: #fff;
   color: #fff;
   position: relative;
   .loginButton {

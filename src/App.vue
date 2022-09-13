@@ -1,64 +1,32 @@
 <template>
   <div id="app">
-    <top></top>
-    <article>
-      <sidebar></sidebar>
-      <index></index>
-    </article>
-
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/> -->
+    <router-view />
   </div>
 </template>
 
 <script>
-import top from "./views/page/top";
-import sidebar from "./views/page/sidebar";
-import index from "./views/page";
 export default {
   name: "app",
-  components: {
-    top,
-    sidebar,
-    index,
-  },
   data() {
     return {};
+  },
+  mounted() {
+    //会导致vue对css的热更新失效，开发时注释
+    setTimeout(() => {
+     L2Dwidget.init({
+        model: {
+          jsonPath: "live2d/assets/asuna_04.model.json",
+        },
+      });
+    }, 1);
   },
 };
 </script>
 
-<style lang="less">
+<style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#app{
+  width: 100%;
   height: 100%;
-  >article{
-    display: flex;
-  }
+  overflow: hidden;
 }
-
-
-
-// #nav {
-//   padding: 30px;
-
-//   a {
-//     font-weight: bold;
-//     color: #2c3e50;
-
-//     &.router-link-exact-active {
-//       color: #42b983;
-//     }
-//   }
-// }
 </style>
