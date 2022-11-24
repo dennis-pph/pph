@@ -2,8 +2,8 @@
   <div id="index">
     <sidebar></sidebar>
     <article>
-      <top></top>
-      <Main-Content></Main-Content>
+      <Top></Top>
+      <MainContent></MainContent>
     </article>
 
     <!-- <router-view></router-view> -->
@@ -11,13 +11,13 @@
 </template>
 
 <script>
-import top from "./Top";
+import Top from "./Top";
 import sidebar from "./Sidebar";
 import MainContent from "./MainContent";
 export default {
   name: "app",
   components: {
-    top,
+    Top,
     sidebar,
     MainContent,
   },

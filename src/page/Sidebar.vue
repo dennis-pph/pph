@@ -100,6 +100,7 @@ export default {
   // },
   mounted() {},
   methods: {
+    // 路径包含路由则是选中样式
     getActivePath(val) {
       if (this.$route.path.indexOf(val) > -1) {
         return true;
@@ -107,6 +108,7 @@ export default {
         return false;
       }
     },
+    // 点击菜单的时候
     menuActive(val) {
       if (val.children.length && val.children.length > 0) {
         this.actived = val.children[0].path;
@@ -125,7 +127,7 @@ export default {
   padding-top: 0.6rem;
   // background: red;
 
-  border-right: 1px solid #999;
+  border-right: 0.01rem solid #999;
 
   display: flex;
   flex-direction: column;
